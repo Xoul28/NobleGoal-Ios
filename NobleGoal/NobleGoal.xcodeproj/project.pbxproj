@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D0729699246B2EE40009313D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0729698246B2EE40009313D /* AppDelegate.swift */; };
-		D072969B246B2EE40009313D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D072969A246B2EE40009313D /* SceneDelegate.swift */; };
 		D072969D246B2EE40009313D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D072969C246B2EE40009313D /* ViewController.swift */; };
 		D07296A0246B2EE40009313D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D072969E246B2EE40009313D /* Main.storyboard */; };
 		D07296A2246B2EE70009313D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D07296A1246B2EE70009313D /* Assets.xcassets */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		D0729695246B2EE40009313D /* NobleGoal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NobleGoal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0729698246B2EE40009313D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D072969A246B2EE40009313D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D072969C246B2EE40009313D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D072969F246B2EE40009313D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D07296A1246B2EE70009313D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,13 +97,13 @@
 		D0729697246B2EE40009313D /* NobleGoal */ = {
 			isa = PBXGroup;
 			children = (
+				D07296CA246B2F4B0009313D /* Config */,
+				D07296C9246B2F370009313D /* Resources */,
+				D07296C8246B2F2D0009313D /* Modules */,
 				D0729698246B2EE40009313D /* AppDelegate.swift */,
-				D072969A246B2EE40009313D /* SceneDelegate.swift */,
 				D072969C246B2EE40009313D /* ViewController.swift */,
 				D072969E246B2EE40009313D /* Main.storyboard */,
-				D07296A1246B2EE70009313D /* Assets.xcassets */,
 				D07296A3246B2EE70009313D /* LaunchScreen.storyboard */,
-				D07296A6246B2EE70009313D /* Info.plist */,
 			);
 			path = NobleGoal;
 			sourceTree = "<group>";
@@ -126,6 +124,37 @@
 				D07296BC246B2EE70009313D /* Info.plist */,
 			);
 			path = NobleGoalUITests;
+			sourceTree = "<group>";
+		};
+		D07296C8246B2F2D0009313D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D07296CB246B30EC0009313D /* Challenges */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D07296C9246B2F370009313D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D07296A1246B2EE70009313D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D07296CA246B2F4B0009313D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D07296A6246B2EE70009313D /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		D07296CB246B30EC0009313D /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Challenges;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +290,6 @@
 			files = (
 				D072969D246B2EE40009313D /* ViewController.swift in Sources */,
 				D0729699246B2EE40009313D /* AppDelegate.swift in Sources */,
-				D072969B246B2EE40009313D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +464,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E9N85AE4T8;
-				INFOPLIST_FILE = NobleGoal/Info.plist;
+				INFOPLIST_FILE = NobleGoal/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +482,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E9N85AE4T8;
-				INFOPLIST_FILE = NobleGoal/Info.plist;
+				INFOPLIST_FILE = NobleGoal/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,7 +501,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E9N85AE4T8;
-				INFOPLIST_FILE = NobleGoalTests/Info.plist;
+				INFOPLIST_FILE = NobleGoalTests/Config/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -495,7 +523,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E9N85AE4T8;
-				INFOPLIST_FILE = NobleGoalTests/Info.plist;
+				INFOPLIST_FILE = NobleGoalTests/Config/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
