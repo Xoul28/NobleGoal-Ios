@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		4B4A275E411F059D94810249 /* Pods_NobleGoalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9C6A73912F17BBF1C07AAB /* Pods_NobleGoalTests.framework */; };
 		6FEE592277890BE1FE9BB13A /* Pods_NobleGoal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE3349EF688D8F48982ED31 /* Pods_NobleGoal.framework */; };
+		D00DBA7624E333E500375277 /* NobleGoalUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D00DBA7424E333E500375277 /* NobleGoalUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D00DBA7924E333E500375277 /* NobleGoalUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00DBA7224E333E500375277 /* NobleGoalUIKit.framework */; };
+		D00DBA7A24E333E500375277 /* NobleGoalUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D00DBA7224E333E500375277 /* NobleGoalUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D00DBA8324E3351400375277 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00DBA8224E3351400375277 /* ProgressView.swift */; };
+		D00DBA8524E3354200375277 /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00DBA8424E3354200375277 /* CircleProgressView.swift */; };
 		D0729699246B2EE40009313D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0729698246B2EE40009313D /* AppDelegate.swift */; };
 		D072969D246B2EE40009313D /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D072969C246B2EE40009313D /* ChallengesViewController.swift */; };
 		D07296A0246B2EE40009313D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D072969E246B2EE40009313D /* Main.storyboard */; };
@@ -24,6 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D00DBA7724E333E500375277 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D072968D246B2EE40009313D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D00DBA7124E333E500375277;
+			remoteInfo = NobleGoalUIKit;
+		};
 		D07296AC246B2EE70009313D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D072968D246B2EE40009313D /* Project object */;
@@ -40,6 +52,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D00DBA7E24E333E500375277 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D00DBA7A24E333E500375277 /* NobleGoalUIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		069E97DF3F0B8E6BF7CCD352 /* Pods-NobleGoal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobleGoal.debug.xcconfig"; path = "Target Support Files/Pods-NobleGoal/Pods-NobleGoal.debug.xcconfig"; sourceTree = "<group>"; };
 		0DD25B166E7C67744D3AD34F /* Pods-NobleGoal-NobleGoalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobleGoal-NobleGoalUITests.debug.xcconfig"; path = "Target Support Files/Pods-NobleGoal-NobleGoalUITests/Pods-NobleGoal-NobleGoalUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -49,6 +75,11 @@
 		B56DFACD63816818BC90C1F4 /* Pods-NobleGoalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobleGoalTests.debug.xcconfig"; path = "Target Support Files/Pods-NobleGoalTests/Pods-NobleGoalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C5B239ECBA1062057CE5D00A /* Pods-NobleGoal-NobleGoalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobleGoal-NobleGoalUITests.release.xcconfig"; path = "Target Support Files/Pods-NobleGoal-NobleGoalUITests/Pods-NobleGoal-NobleGoalUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CEA80D2CFB58F2204B9680D2 /* Pods_NobleGoal_NobleGoalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NobleGoal_NobleGoalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00DBA7224E333E500375277 /* NobleGoalUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NobleGoalUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00DBA7424E333E500375277 /* NobleGoalUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NobleGoalUIKit.h; sourceTree = "<group>"; };
+		D00DBA7524E333E500375277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D00DBA8224E3351400375277 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		D00DBA8424E3354200375277 /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
 		D0729695246B2EE40009313D /* NobleGoal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NobleGoal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0729698246B2EE40009313D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D072969C246B2EE40009313D /* ChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
@@ -70,11 +101,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D00DBA6F24E333E500375277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0729692246B2EE40009313D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6FEE592277890BE1FE9BB13A /* Pods_NobleGoal.framework in Frameworks */,
+				D00DBA7924E333E500375277 /* NobleGoalUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +146,49 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D00DBA7324E333E500375277 /* NobleGoalUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				D00DBA8124E3343700375277 /* Sources */,
+				D00DBA8024E3342500375277 /* Header */,
+				D00DBA7524E333E500375277 /* Info.plist */,
+			);
+			path = NobleGoalUIKit;
+			sourceTree = "<group>";
+		};
+		D00DBA7F24E333F600375277 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				D00DBA7324E333E500375277 /* NobleGoalUIKit */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		D00DBA8024E3342500375277 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				D00DBA7424E333E500375277 /* NobleGoalUIKit.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		D00DBA8124E3343700375277 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D00DBA8624E3357300375277 /* ProgressView */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D00DBA8624E3357300375277 /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				D00DBA8224E3351400375277 /* ProgressView.swift */,
+				D00DBA8424E3354200375277 /* CircleProgressView.swift */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
 		D072968C246B2EE40009313D = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +199,7 @@
 				D07296B9246B2EE70009313D /* NobleGoalUITests */,
 				D42DCED39620616205F5CCE2 /* Pods */,
 				D0729696246B2EE40009313D /* Products */,
+				D00DBA7F24E333F600375277 /* Vendors */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +209,7 @@
 				D0729695246B2EE40009313D /* NobleGoal.app */,
 				D07296AB246B2EE70009313D /* NobleGoalTests.xctest */,
 				D07296B6246B2EE70009313D /* NobleGoalUITests.xctest */,
+				D00DBA7224E333E500375277 /* NobleGoalUIKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -211,7 +295,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		D00DBA6D24E333E500375277 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00DBA7624E333E500375277 /* NobleGoalUIKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		D00DBA7124E333E500375277 /* NobleGoalUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D00DBA7B24E333E500375277 /* Build configuration list for PBXNativeTarget "NobleGoalUIKit" */;
+			buildPhases = (
+				D00DBA6D24E333E500375277 /* Headers */,
+				D00DBA6E24E333E500375277 /* Sources */,
+				D00DBA6F24E333E500375277 /* Frameworks */,
+				D00DBA7024E333E500375277 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NobleGoalUIKit;
+			productName = NobleGoalUIKit;
+			productReference = D00DBA7224E333E500375277 /* NobleGoalUIKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D0729694246B2EE40009313D /* NobleGoal */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D07296BF246B2EE70009313D /* Build configuration list for PBXNativeTarget "NobleGoal" */;
@@ -221,10 +334,12 @@
 				D0729692246B2EE40009313D /* Frameworks */,
 				D0729693246B2EE40009313D /* Resources */,
 				715DFF9074FB0F95F5EA9D51 /* [CP] Embed Pods Frameworks */,
+				D00DBA7E24E333E500375277 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D00DBA7824E333E500375277 /* PBXTargetDependency */,
 			);
 			name = NobleGoal;
 			productName = NobleGoal;
@@ -280,6 +395,10 @@
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Mike Chernikov";
 				TargetAttributes = {
+					D00DBA7124E333E500375277 = {
+						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
+					};
 					D0729694246B2EE40009313D = {
 						CreatedOnToolsVersion = 11.4;
 					};
@@ -309,11 +428,19 @@
 				D0729694246B2EE40009313D /* NobleGoal */,
 				D07296AA246B2EE70009313D /* NobleGoalTests */,
 				D07296B5246B2EE70009313D /* NobleGoalUITests */,
+				D00DBA7124E333E500375277 /* NobleGoalUIKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D00DBA7024E333E500375277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0729693246B2EE40009313D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -445,6 +572,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D00DBA6E24E333E500375277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00DBA8324E3351400375277 /* ProgressView.swift in Sources */,
+				D00DBA8524E3354200375277 /* CircleProgressView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0729691246B2EE40009313D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -476,6 +612,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D00DBA7824E333E500375277 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D00DBA7124E333E500375277 /* NobleGoalUIKit */;
+			targetProxy = D00DBA7724E333E500375277 /* PBXContainerItemProxy */;
+		};
 		D07296AD246B2EE70009313D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D0729694246B2EE40009313D /* NobleGoal */;
@@ -508,6 +649,63 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D00DBA7C24E333E500375277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = B4Q34X3MCH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Vendors/NobleGoalUIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mike.chernikov.NobleGoalUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D00DBA7D24E333E500375277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = B4Q34X3MCH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Vendors/NobleGoalUIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mike.chernikov.NobleGoalUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D07296BD246B2EE70009313D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -626,6 +824,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 069E97DF3F0B8E6BF7CCD352 /* Pods-NobleGoal.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B4Q34X3MCH;
@@ -646,6 +845,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B47E8614F5105EC25C93DA44 /* Pods-NobleGoal.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B4Q34X3MCH;
@@ -753,6 +953,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D00DBA7B24E333E500375277 /* Build configuration list for PBXNativeTarget "NobleGoalUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D00DBA7C24E333E500375277 /* Debug */,
+				D00DBA7D24E333E500375277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D0729690246B2EE40009313D /* Build configuration list for PBXProject "NobleGoal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

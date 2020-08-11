@@ -84,18 +84,10 @@ PODS:
   - nanopb/encode (0.3.9011)
   - PromisesObjC (1.2.8)
   - Protobuf (3.11.2)
-  - RxCocoa (5.1.1):
-    - RxRelay (~> 5)
-    - RxSwift (~> 5)
-  - RxRelay (5.1.1):
-    - RxSwift (~> 5)
-  - RxSwift (5.1.1)
 
 DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Messaging
-  - RxCocoa (~> 5)
-  - RxSwift (~> 5)
 
 SPEC REPOS:
   trunk:
@@ -115,9 +107,6 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - Protobuf
-    - RxCocoa
-    - RxRelay
-    - RxSwift
 
 SPEC CHECKSUMS:
   Firebase: 497158b816d0a86fc31babbd05546fcd7e6083ff
@@ -136,10 +125,7 @@ SPEC CHECKSUMS:
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   Protobuf: dd1aaea7140debfe4dd0683fb8ef208e527ae153
-  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
-  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
-  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
 
-PODFILE CHECKSUM: d9cea45dce116bfcb28172195511e9e4e76f59cd
+PODFILE CHECKSUM: d559270307d3bea0f07133ffcaf7c823a328b285
 
 COCOAPODS: 1.8.4
