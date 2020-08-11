@@ -1,0 +1,6 @@
+framework module Pods_NobleGoal {
+  umbrella header "Pods-NobleGoal-umbrella.h"
+
+  export *
+  module * { export * }
+}

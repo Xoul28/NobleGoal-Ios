@@ -1,0 +1,6 @@
+framework module Pods_NobleGoal_NobleGoalUITests {
+  umbrella header "Pods-NobleGoal-NobleGoalUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

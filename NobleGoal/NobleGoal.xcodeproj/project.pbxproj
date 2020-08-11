@@ -3,17 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B4A275E411F059D94810249 /* Pods_NobleGoalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9C6A73912F17BBF1C07AAB /* Pods_NobleGoalTests.framework */; };
+		6FEE592277890BE1FE9BB13A /* Pods_NobleGoal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE3349EF688D8F48982ED31 /* Pods_NobleGoal.framework */; };
 		D0729699246B2EE40009313D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0729698246B2EE40009313D /* AppDelegate.swift */; };
-		D072969D246B2EE40009313D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D072969C246B2EE40009313D /* ViewController.swift */; };
+		D072969D246B2EE40009313D /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D072969C246B2EE40009313D /* ChallengesViewController.swift */; };
 		D07296A0246B2EE40009313D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D072969E246B2EE40009313D /* Main.storyboard */; };
 		D07296A2246B2EE70009313D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D07296A1246B2EE70009313D /* Assets.xcassets */; };
 		D07296A5246B2EE70009313D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07296A3246B2EE70009313D /* LaunchScreen.storyboard */; };
 		D07296B0246B2EE70009313D /* NobleGoalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07296AF246B2EE70009313D /* NobleGoalTests.swift */; };
 		D07296BB246B2EE70009313D /* NobleGoalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07296BA246B2EE70009313D /* NobleGoalUITests.swift */; };
+		D07296CD246B32760009313D /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07296CC246B32760009313D /* Challenge.swift */; };
+		D07296CF246B39F00009313D /* ChallengeCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07296CE246B39F00009313D /* ChallengeCollectionViewFlowLayout.swift */; };
+		D07296D1246B43DA0009313D /* ChallengeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07296D0246B43DA0009313D /* ChallengeCell.swift */; };
+		D07296D7246C83DB0009313D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D07296D6246C83DB0009313D /* GoogleService-Info.plist */; };
+		D27E70EB5215122361C04B53 /* Pods_NobleGoal_NobleGoalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA80D2CFB58F2204B9680D2 /* Pods_NobleGoal_NobleGoalUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		069E97DF3F0B8E6BF7CCD352 /* Pods-NobleGoal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobleGoal.debug.xcconfig"; path = "Target Support Files/Pods-NobleGoal/Pods-NobleGoal.debug.xcconfig"; sourceTree = "<group>"; };
+		0DD25B166E7C67744D3AD34F /* Pods-NobleGoal-NobleGoalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobleGoal-NobleGoalUITests.debug.xcconfig"; path = "Target Support Files/Pods-NobleGoal-NobleGoalUITests/Pods-NobleGoal-NobleGoalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A9C6A73912F17BBF1C07AAB /* Pods_NobleGoalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NobleGoalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CE3349EF688D8F48982ED31 /* Pods_NobleGoal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NobleGoal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B47E8614F5105EC25C93DA44 /* Pods-NobleGoal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobleGoal.release.xcconfig"; path = "Target Support Files/Pods-NobleGoal/Pods-NobleGoal.release.xcconfig"; sourceTree = "<group>"; };
+		B56DFACD63816818BC90C1F4 /* Pods-NobleGoalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobleGoalTests.debug.xcconfig"; path = "Target Support Files/Pods-NobleGoalTests/Pods-NobleGoalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C5B239ECBA1062057CE5D00A /* Pods-NobleGoal-NobleGoalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobleGoal-NobleGoalUITests.release.xcconfig"; path = "Target Support Files/Pods-NobleGoal-NobleGoalUITests/Pods-NobleGoal-NobleGoalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CEA80D2CFB58F2204B9680D2 /* Pods_NobleGoal_NobleGoalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NobleGoal_NobleGoalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0729695246B2EE40009313D /* NobleGoal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NobleGoal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0729698246B2EE40009313D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D072969C246B2EE40009313D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D072969C246B2EE40009313D /* ChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
 		D072969F246B2EE40009313D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D07296A1246B2EE70009313D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D07296A4246B2EE70009313D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +62,11 @@
 		D07296B6246B2EE70009313D /* NobleGoalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NobleGoalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07296BA246B2EE70009313D /* NobleGoalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NobleGoalUITests.swift; sourceTree = "<group>"; };
 		D07296BC246B2EE70009313D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D07296CC246B32760009313D /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		D07296CE246B39F00009313D /* ChallengeCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		D07296D0246B43DA0009313D /* ChallengeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeCell.swift; sourceTree = "<group>"; };
+		D07296D6246C83DB0009313D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FD2FDFB6E5BDB8A9A1955923 /* Pods-NobleGoalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NobleGoalTests.release.xcconfig"; path = "Target Support Files/Pods-NobleGoalTests/Pods-NobleGoalTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FEE592277890BE1FE9BB13A /* Pods_NobleGoal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B4A275E411F059D94810249 /* Pods_NobleGoalTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,18 +90,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D27E70EB5215122361C04B53 /* Pods_NobleGoal_NobleGoalUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A72076A364986FB5FF8402F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CE3349EF688D8F48982ED31 /* Pods_NobleGoal.framework */,
+				CEA80D2CFB58F2204B9680D2 /* Pods_NobleGoal_NobleGoalUITests.framework */,
+				5A9C6A73912F17BBF1C07AAB /* Pods_NobleGoalTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D072968C246B2EE40009313D = {
 			isa = PBXGroup;
 			children = (
+				D07296D6246C83DB0009313D /* GoogleService-Info.plist */,
+				A72076A364986FB5FF8402F2 /* Frameworks */,
 				D0729697246B2EE40009313D /* NobleGoal */,
 				D07296AE246B2EE70009313D /* NobleGoalTests */,
 				D07296B9246B2EE70009313D /* NobleGoalUITests */,
+				D42DCED39620616205F5CCE2 /* Pods */,
 				D0729696246B2EE40009313D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,7 +137,6 @@
 				D07296C9246B2F370009313D /* Resources */,
 				D07296C8246B2F2D0009313D /* Modules */,
 				D0729698246B2EE40009313D /* AppDelegate.swift */,
-				D072969C246B2EE40009313D /* ViewController.swift */,
 				D072969E246B2EE40009313D /* Main.storyboard */,
 				D07296A3246B2EE70009313D /* LaunchScreen.storyboard */,
 			);
@@ -153,8 +188,25 @@
 		D07296CB246B30EC0009313D /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
+				D072969C246B2EE40009313D /* ChallengesViewController.swift */,
+				D07296CC246B32760009313D /* Challenge.swift */,
+				D07296CE246B39F00009313D /* ChallengeCollectionViewFlowLayout.swift */,
+				D07296D0246B43DA0009313D /* ChallengeCell.swift */,
 			);
 			path = Challenges;
+			sourceTree = "<group>";
+		};
+		D42DCED39620616205F5CCE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				069E97DF3F0B8E6BF7CCD352 /* Pods-NobleGoal.debug.xcconfig */,
+				B47E8614F5105EC25C93DA44 /* Pods-NobleGoal.release.xcconfig */,
+				0DD25B166E7C67744D3AD34F /* Pods-NobleGoal-NobleGoalUITests.debug.xcconfig */,
+				C5B239ECBA1062057CE5D00A /* Pods-NobleGoal-NobleGoalUITests.release.xcconfig */,
+				B56DFACD63816818BC90C1F4 /* Pods-NobleGoalTests.debug.xcconfig */,
+				FD2FDFB6E5BDB8A9A1955923 /* Pods-NobleGoalTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D07296BF246B2EE70009313D /* Build configuration list for PBXNativeTarget "NobleGoal" */;
 			buildPhases = (
+				01DA81BE522AA2860B9B422E /* [CP] Check Pods Manifest.lock */,
 				D0729691246B2EE40009313D /* Sources */,
 				D0729692246B2EE40009313D /* Frameworks */,
 				D0729693246B2EE40009313D /* Resources */,
+				715DFF9074FB0F95F5EA9D51 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,6 +235,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D07296C2246B2EE70009313D /* Build configuration list for PBXNativeTarget "NobleGoalTests" */;
 			buildPhases = (
+				2CD1088809C2E1C9C6446BC3 /* [CP] Check Pods Manifest.lock */,
 				D07296A7246B2EE70009313D /* Sources */,
 				D07296A8246B2EE70009313D /* Frameworks */,
 				D07296A9246B2EE70009313D /* Resources */,
@@ -199,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D07296C5246B2EE70009313D /* Build configuration list for PBXNativeTarget "NobleGoalUITests" */;
 			buildPhases = (
+				2E681B7BA207C5577C295D6C /* [CP] Check Pods Manifest.lock */,
 				D07296B2246B2EE70009313D /* Sources */,
 				D07296B3246B2EE70009313D /* Frameworks */,
 				D07296B4246B2EE70009313D /* Resources */,
+				FC9E06BC5BA51843FF300BA1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,6 +321,7 @@
 				D07296A5246B2EE70009313D /* LaunchScreen.storyboard in Resources */,
 				D07296A2246B2EE70009313D /* Assets.xcassets in Resources */,
 				D07296A0246B2EE40009313D /* Main.storyboard in Resources */,
+				D07296D7246C83DB0009313D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +341,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01DA81BE522AA2860B9B422E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NobleGoal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CD1088809C2E1C9C6446BC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NobleGoalTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E681B7BA207C5577C295D6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NobleGoal-NobleGoalUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		715DFF9074FB0F95F5EA9D51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NobleGoal/Pods-NobleGoal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NobleGoal/Pods-NobleGoal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NobleGoal/Pods-NobleGoal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC9E06BC5BA51843FF300BA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NobleGoal-NobleGoalUITests/Pods-NobleGoal-NobleGoalUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NobleGoal-NobleGoalUITests/Pods-NobleGoal-NobleGoalUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NobleGoal-NobleGoalUITests/Pods-NobleGoal-NobleGoalUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D0729691246B2EE40009313D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D072969D246B2EE40009313D /* ViewController.swift in Sources */,
+				D07296D1246B43DA0009313D /* ChallengeCell.swift in Sources */,
+				D072969D246B2EE40009313D /* ChallengesViewController.swift in Sources */,
+				D07296CD246B32760009313D /* Challenge.swift in Sources */,
+				D07296CF246B39F00009313D /* ChallengeCollectionViewFlowLayout.swift in Sources */,
 				D0729699246B2EE40009313D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,11 +624,13 @@
 		};
 		D07296C0246B2EE70009313D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 069E97DF3F0B8E6BF7CCD352 /* Pods-NobleGoal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E9N85AE4T8;
+				DEVELOPMENT_TEAM = B4Q34X3MCH;
 				INFOPLIST_FILE = NobleGoal/Config/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,11 +644,13 @@
 		};
 		D07296C1246B2EE70009313D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B47E8614F5105EC25C93DA44 /* Pods-NobleGoal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E9N85AE4T8;
+				DEVELOPMENT_TEAM = B4Q34X3MCH;
 				INFOPLIST_FILE = NobleGoal/Config/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -496,6 +664,7 @@
 		};
 		D07296C3246B2EE70009313D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B56DFACD63816818BC90C1F4 /* Pods-NobleGoalTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -518,6 +687,7 @@
 		};
 		D07296C4246B2EE70009313D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD2FDFB6E5BDB8A9A1955923 /* Pods-NobleGoalTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +710,7 @@
 		};
 		D07296C6246B2EE70009313D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DD25B166E7C67744D3AD34F /* Pods-NobleGoal-NobleGoalUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -560,6 +731,7 @@
 		};
 		D07296C7246B2EE70009313D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5B239ECBA1062057CE5D00A /* Pods-NobleGoal-NobleGoalUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
